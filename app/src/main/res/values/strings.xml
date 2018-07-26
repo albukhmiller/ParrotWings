@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Parrot Wings</string>
+    <string name="errorAuth">Вы указали неверный логин или пароль</string>
+    <string name="errorRegistration">Пользователь с таким email уже зарегистрирован</string>
+    <string name="email">Введите email</string>
+    <string name="password">Введите пароль</string>
+    <string name="login">Войти</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="labelForLogin">Уже есть аккаунт?</string>
+    <string name="yourName">Ваше имя</string>
+    <string name="yourEmail">Ваш email</string>
+    <string name="yourPassword">Ваш пароль</string>
+    <string name="repeatedPassword">Повторите пароль</string>
+    <string name="logoDeck">Логотип</string>
+    <string name="balance">Баланс</string>
+    <string name="yourTransactions">Ваши транзакции</string>
+    <string name="sum">Сумма</string>
+    <string name="text_error_view">Ошибка загрузки данных, проверьте соединение с интернетом</string>
+</resources>

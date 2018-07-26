@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llTrans"
+    android:orientation="vertical"
+    tools:context="alex.parrotwings.presentations.ui.activities.TransactionActivity">
+
+    <include layout="@layout/transaction_toolbar" />
+
+    <include
+        android:id="@+id/searcgLayout"
+        layout="@layout/search_layout"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvSumTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_coins"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="@string/sum"
+        android:maxLines="6"
+        android:inputType="number"
+        android:singleLine="true"
+        app:met_floatingLabel="highlight" />
+
+</LinearLayout>

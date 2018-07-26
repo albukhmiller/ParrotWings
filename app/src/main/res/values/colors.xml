@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#318b34</color>
+    <color name="colorPrimaryDark">#21541d</color>
+    <color name="colorAccent">#61ed6d</color>
+    <color name="сolorBackgroundPrimaryScreen">#6c9e5f</color>
+    <color name="colorBtnRegistration">#c1e9b6</color>
+    <color name="colorIncomingTransaction">#ccf1c1</color>
+    <color name="colorBackgroundAccount">#daecd5</color>
+    <color name="colorOutgoingTransaction">#f1c4c1</color>
+</resources>
