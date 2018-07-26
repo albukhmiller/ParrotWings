@@ -11,7 +11,6 @@ import android.os.Bundle
 import android.view.View
 import com.rengwuxian.materialedittext.validation.RegexpValidator
 import kotlinx.android.synthetic.main.activity_registration.*
-import org.jetbrains.anko.clearTask
 import org.jetbrains.anko.design.snackbar
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.startActivity
@@ -27,8 +26,13 @@ class RegistrationActivity : BaseMvpActivity<RegistrationView, RegistrationPrese
         setListeners()
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity<PrimaryActivity>()
+    }
+
     override fun onSuccessRegistration() {
-        startActivity(intentFor<AccountActivity>().clearTask())
+        startActivity(intentFor<AccountActivity>())
         finish()
     }
 
