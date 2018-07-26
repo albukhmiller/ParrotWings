@@ -67,7 +67,6 @@ class AccountActivity : BaseMvpActivity<AccountView, AccountPresenter>(), Accoun
         return super.onOptionsItemSelected(item)
     }
 
-
     override fun onSuccessLoadUserData(user: User) {
         tvBalance.text = user.balance.toString()
         tvNameUser.text = user.name

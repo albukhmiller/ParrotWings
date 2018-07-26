@@ -30,7 +30,7 @@ class LoginActivity : BaseMvpActivity<LoginView, LoginPresenter>(), LoginView {
     }
 
     override fun onSuccessLogin(userToken: String) {
-        startActivity(intentFor<AccountActivity>())
+        startActivity<AccountActivity>()
         finish()
     }
 
