@@ -22,6 +22,7 @@ class PrimaryActivity : AppCompatActivity() {
     private fun setListener() {
         btnOpenLogin.setOnClickListener {
             startActivity<LoginActivity>()
+            finish()
         }
 
         btnOpenRegistration.setOnClickListener {
