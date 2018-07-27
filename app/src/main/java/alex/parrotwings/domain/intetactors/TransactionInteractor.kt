@@ -2,7 +2,7 @@ package alex.parrotwings.domain.intetactors
 
 import alex.parrotwings.data.remote.GetTransactionResponse
 import alex.parrotwings.domain.ApiServer
-import alex.parrotwings.domain.sharedPreference.LocalRepository
+import alex.parrotwings.data.local.sharedPreference.LocalRepository
 import alex.parrotwings.models.Receiver
 import alex.parrotwings.models.Transaction
 import alex.parrotwings.presentations.mvp.presenterImpls.interactorListeners.TransactionInteracorListener

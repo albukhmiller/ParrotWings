@@ -7,13 +7,12 @@ import alex.parrotwings.presentations.mvp.presenters.RegistrationPresenter
 import alex.parrotwings.presentations.mvp.views.RegistrationView
 import alex.parrotwings.presentations.ui.base.BaseMvpActivity
 import alex.parrotwings.utils.Validators
+import android.app.Activity
 import android.os.Bundle
 import android.view.View
 import com.rengwuxian.materialedittext.validation.RegexpValidator
 import kotlinx.android.synthetic.main.activity_registration.*
 import org.jetbrains.anko.design.snackbar
-import org.jetbrains.anko.intentFor
-import org.jetbrains.anko.startActivity
 
 class RegistrationActivity : BaseMvpActivity<RegistrationView, RegistrationPresenter>(), RegistrationView {
 
@@ -28,11 +27,11 @@ class RegistrationActivity : BaseMvpActivity<RegistrationView, RegistrationPrese
 
     override fun onBackPressed() {
         super.onBackPressed()
-        startActivity<PrimaryActivity>()
+        setResult(Activity.RESULT_CANCELED)
     }
 
     override fun onSuccessRegistration() {
-        startActivity(intentFor<AccountActivity>())
+        setResult(Activity.RESULT_OK)
         finish()
     }
 
@@ -50,10 +49,10 @@ class RegistrationActivity : BaseMvpActivity<RegistrationView, RegistrationPrese
     }
 
     private fun setValidationFields() {
-        edUsername.addValidator(RegexpValidator("Имя должно содержать только буквы", "\\D+"))
-        edEmail.addValidator(Validators.EmailValidator("Вы ввели некорректный email"))
-        edPassword.addValidator(Validators.PasswordOverlapValidator(edRepeatedPassword.text.toString(), "Введенные пароли не совпадают"))
-                .addValidator(Validators.PasswordLengthValidator("Пароль должен содержать минимум 6 символов"))
+        edUsername.addValidator(RegexpValidator(getString(R.string.validatorTextOnlySymbol), "\\D+"))
+        edEmail.addValidator(Validators.EmailValidator(getString(R.string.validatorTextEmail)))
+        edPassword.addValidator(Validators.PasswordOverlapValidator(edRepeatedPassword.text.toString(), getString(R.string.validatorPasswordMatch)))
+                .addValidator(Validators.PasswordLengthValidator(getString(R.string.ValidatorLengthPassword)))
     }
 
     private fun setListeners() {

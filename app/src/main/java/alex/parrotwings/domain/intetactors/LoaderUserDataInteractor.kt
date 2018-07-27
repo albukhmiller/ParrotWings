@@ -4,7 +4,7 @@ import alex.parrotwings.data.remote.DtoMapper
 import alex.parrotwings.data.remote.GetAllTransactionsResponse
 import alex.parrotwings.data.remote.GetUserInfoResponse
 import alex.parrotwings.domain.ApiServer
-import alex.parrotwings.domain.sharedPreference.LocalRepository
+import alex.parrotwings.data.local.sharedPreference.LocalRepository
 import alex.parrotwings.presentations.mvp.presenterImpls.interactorListeners.LoaderUserDataInteractorListener
 import retrofit2.Call
 import retrofit2.Callback

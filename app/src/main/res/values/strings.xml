@@ -16,4 +16,8 @@
     <string name="yourTransactions">Ваши транзакции</string>
     <string name="sum">Сумма</string>
     <string name="text_error_view">Ошибка загрузки данных, проверьте соединение с интернетом</string>
+    <string name="validatorTextOnlySymbol">Имя должно содержать только буквы</string>
+    <string name="validatorTextEmail">Вы ввели некорректный email</string>
+    <string name="validatorPasswordMatch">Введенные пароли не совпадают</string>
+    <string name="ValidatorLengthPassword">Пароль должен содержать минимум 6 символов</string>
 </resources>

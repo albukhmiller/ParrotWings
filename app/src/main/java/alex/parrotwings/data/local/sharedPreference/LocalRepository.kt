@@ -1,4 +1,4 @@
-package alex.parrotwings.domain.sharedPreference
+package alex.parrotwings.data.local.sharedPreference
 
 import android.content.Context
 import android.content.Context.MODE_PRIVATE

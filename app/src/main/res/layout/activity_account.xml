@@ -15,6 +15,9 @@
         android:visibility="gone"
         layout="@layout/layout_error"/>
 
+    <include
+        android:id="@+id/layoutLoader"
+        layout="@layout/layout_loader"/>
     <TextView
         android:id="@+id/tvBalance"
         android:layout_width="wrap_content"

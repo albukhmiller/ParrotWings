@@ -131,13 +131,14 @@ class TransactionActivity : BaseMvpActivity<TransactionView, TransactionPresente
         rvReceivers.setHasFixedSize(true)
     }
 
-   private fun hideKeyboard() {
+    private fun hideKeyboard() {
         val imm = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(window.decorView.windowToken, 0)
         edSearchUser.clearFocus()
         edSearchUser.isCursorVisible = false
 
     }
+
     private fun showSnackbar() {
         val view = snackbar(llTrans, getString(R.string.text_error_view)).view
         view.setBackgroundColor(getColor(android.R.color.holo_red_dark))

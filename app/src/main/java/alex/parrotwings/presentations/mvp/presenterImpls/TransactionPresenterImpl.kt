@@ -1,10 +1,9 @@
 package alex.parrotwings.presentations.mvp.presenterImpls
 
 import alex.parrotwings.domain.intetactors.TransactionInteractor
-import alex.parrotwings.domain.sharedPreference.LocalRepository
+import alex.parrotwings.data.local.sharedPreference.LocalRepository
 import alex.parrotwings.models.Receiver
 import alex.parrotwings.models.Transaction
-import alex.parrotwings.presentations.mvp.presenterImpls.interactorListeners.BaseInteractorListener
 import alex.parrotwings.presentations.mvp.presenterImpls.interactorListeners.TransactionInteracorListener
 import alex.parrotwings.presentations.mvp.presenters.TransactionPresenter
 import alex.parrotwings.presentations.mvp.views.TransactionView

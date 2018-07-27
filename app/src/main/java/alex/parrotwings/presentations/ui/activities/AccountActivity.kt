@@ -79,7 +79,9 @@ class AccountActivity : BaseMvpActivity<AccountView, AccountPresenter>(), Accoun
         finish()
     }
 
+
     override fun onSuccessLoadTransaction(transactions: ArrayList<Transaction>) {
+        layoutLoader.visibility = View.GONE
         layoutError.visibility = View.GONE
         if (adapterTransactions == null) {
             adapterTransactions = TransactionAdapter(transactions) {

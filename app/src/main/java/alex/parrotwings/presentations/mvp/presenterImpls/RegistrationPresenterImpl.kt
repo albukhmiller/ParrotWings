@@ -1,7 +1,7 @@
 package alex.parrotwings.presentations.mvp.presenterImpls
 
 import alex.parrotwings.domain.intetactors.AuthorizationInteractor
-import alex.parrotwings.domain.sharedPreference.LocalRepository
+import alex.parrotwings.data.local.sharedPreference.LocalRepository
 import alex.parrotwings.models.AuthInfo
 import alex.parrotwings.presentations.mvp.presenterImpls.interactorListeners.BaseInteractorListener
 import alex.parrotwings.presentations.mvp.presenters.RegistrationPresenter

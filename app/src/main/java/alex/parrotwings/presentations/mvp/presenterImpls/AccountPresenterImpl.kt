@@ -1,7 +1,7 @@
 package alex.parrotwings.presentations.mvp.presenterImpls
 
 import alex.parrotwings.domain.intetactors.LoaderUserDataInteractor
-import alex.parrotwings.domain.sharedPreference.LocalRepository
+import alex.parrotwings.data.local.sharedPreference.LocalRepository
 import alex.parrotwings.models.Transaction
 import alex.parrotwings.models.User
 import alex.parrotwings.presentations.mvp.presenterImpls.interactorListeners.LoaderUserDataInteractorListener

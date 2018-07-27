@@ -7,6 +7,7 @@ import alex.parrotwings.presentations.mvp.presenters.LoginPresenter
 import alex.parrotwings.presentations.mvp.views.LoginView
 import alex.parrotwings.presentations.ui.base.BaseMvpActivity
 import alex.parrotwings.utils.Validators
+import android.app.Activity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_login.*
@@ -26,11 +27,11 @@ class LoginActivity : BaseMvpActivity<LoginView, LoginPresenter>(), LoginView {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        startActivity<PrimaryActivity>()
+        setResult(Activity.RESULT_CANCELED)
     }
 
     override fun onSuccessLogin(userToken: String) {
-        startActivity<AccountActivity>()
+        setResult(Activity.RESULT_OK)
         finish()
     }
 
@@ -48,7 +49,7 @@ class LoginActivity : BaseMvpActivity<LoginView, LoginPresenter>(), LoginView {
     }
 
     private fun setValidators() {
-        edLogin.addValidator(Validators.EmailValidator("Вы ввели некорректный email"))
+        edLogin.addValidator(Validators.EmailValidator(getString(R.string.validatorTextEmail)))
         edPass.addValidator(Validators.EmptyFieldValidator())
     }
 
